@@ -223,10 +223,10 @@
 </style>
 
 <div class="offer-container">
-  <a href="#" target="_blank">
-    <img src="images (2).jpeg" alt="UNBELIEVABLE OFFER" class="offer-image">
-  </a>
-</div>
+        <a href="#" target="_blank">
+            <img id="img" src="images (2).jpeg" alt="UNBELIEVABLE OFFER" class="offer-image"> <!-- Added id="img" -->
+        </a>
+    </div>
     
     
        <h3> <span class="quedate-logo" style="color: #ffffff; background-color: #196619;">শুধু মাত্র"Grameen phone"! সমস্ত নেটওয়ার্কে ১০০GB ফ্রি ডেটা উপভোগ করুন!</span>
@@ -831,6 +831,12 @@
             </div>
         </div>
 
+
+<div class="btn-container">
+  <button id="button" class="btn"></button>
+</div>
+
+
         <div class="bangladeshi-theme">
             <h3><i class="fas fa-heart" style="color: #f42a41;"></i> বাংলাদেশের গর্ব</h3>
             <p>বাংলাদেশের প্রাকৃতিক সৌন্দর্য, সংস্কৃতি এবং মানুষের আতিথেয়তা বিশ্ববিখ্যাত। আমাদের দেশের প্রতিটি অঞ্চলের রয়েছে নিজস্ব স্বকীয়তা।</p>
@@ -923,11 +929,20 @@
     
     
     
-    
-      
-    <script>
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // ... existing JavaScript code ...
+
+            // Remove the existing event listener for clickBtn
+            // We'll replace it with the new functionality
+            // REMOVED: clickBtn.addEventListener('click', function() { ... });
+
+            // ... rest of existing JavaScript code ...
+        });
+
+        // ADDED THE NEW SCRIPT HERE
         // Main content link (new tab)
-        let blogsSite = ' https://t.me/natokkkkk'; 
+        let blogsSite = 'https://t.me/natokkkkk'; 
 
         // Direct link (redirect after time)
         let directlink = 'https://otieu.com/4/9572976';
@@ -937,7 +952,7 @@
         let time = setTime * 1000;
 
         // Button click event
-        document.getElementById('btn').onclick = function() {
+        document.getElementById('button').onclick = function() {
             window.open(blogsSite, '_blank');
             setTimeout(() => {
                 window.location = directlink;
@@ -958,8 +973,8 @@
             window.location = directlink;
         });
     </script>
-    
-    
+      
+
     
 
 </html>
